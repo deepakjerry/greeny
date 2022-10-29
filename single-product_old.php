@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <?php
         /**
          * woocommerce_before_main_content hook.
@@ -32,3 +33,4 @@
          */
         do_action( 'woocommerce_sidebar' );
     ?>
+    <?php get_footer();?>

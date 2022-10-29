@@ -1,8 +1,8 @@
 <?php
 /**
- * Single Product Price
+ * Single Product stock.
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/single-product/price.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/single-product/stock.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -16,10 +16,8 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+	exit;
 }
 
-global $product;
-
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>">d<?php echo $product->get_price_html(); ?></p>
+<p class="stock <?php echo esc_attr( $class ); ?>"><?php echo wp_kses_post( $availability ); ?></p>

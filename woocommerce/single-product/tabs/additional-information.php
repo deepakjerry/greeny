@@ -1,8 +1,8 @@
 <?php
 /**
- * Single Product Price
+ * Additional Information tab
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/single-product/price.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/single-product/tabs/additional-information.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -15,11 +15,16 @@
  * @version 3.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 global $product;
 
+$heading = apply_filters( 'woocommerce_product_additional_information_heading', __( 'Additional information', 'woocommerce' ) );
+
 ?>
-<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>">d<?php echo $product->get_price_html(); ?></p>
+
+<?php if ( $heading ) : ?>
+	<h2><?php echo esc_html( $heading ); ?></h2>
+<?php endif; ?>
+
+<?php do_action( 'woocommerce_product_additional_information', $product ); ?>
