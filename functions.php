@@ -88,6 +88,7 @@ add_theme_support( 'post-thumbnails');
 // add_action('init', 'wporg_custom_post_type');
 
 // Wocommerce suporting 
+add_theme_support( 'woocommerce');
 function mytheme_add_woocommerce_support() {
   add_theme_support( 'woocommerce' );
 }

@@ -80,11 +80,11 @@
                 <div class="header-content">
                     <div class="header-media-group">
                         <button class="header-user"><img src="<?php echo bloginfo('template_url') ?>/images/user.png" alt="user"></button>
-                        <a href="<?php get_bloginfo('url'); ?>"><img src="<?php echo bloginfo('template_url') ?>/images/logo.png" alt="logo"></a>
+                        <a href="<?php echo home_url() ?>"><img src="<?php echo bloginfo('template_url') ?>/images/logo.png" alt="logo"></a>
                         <button class="header-src"><i class="fas fa-search"></i></button>
                     </div>
 
-                    <a href="<?php get_bloginfo('url'); ?>" class="header-logo">
+                    <a href="<?php echo home_url() ?>" class="header-logo">
                         <img src="<?php echo bloginfo('template_url') ?>/images/logo.png" alt="logo">
                     </a>
                     <a href="login.html" class="header-widget" title="My Account">
@@ -730,7 +730,7 @@
                     <li>
                         <a class="nav-link dropdown-link" href="#"><i class="icofont-page"></i>product</a>
                         <ul class="dropdown-list">
-                            <li><a href="product-tab.html">product tab</a></li>
+                            <li><a href="product-tab.html">product tabs</a></li>
                             <li><a href="product-grid.html">product grid</a></li>
                             <li><a href="product-video.html">product video</a></li>
                             <li><a href="product-simple.html">product simple</a></li>

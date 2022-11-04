@@ -11,8 +11,7 @@
             <div class="container">
                 <h2>Shop 4 Column</h2>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">shop-4column</li>
+                    <li class="breadcrumb-item"><a href="index.html"><?php woocommerce_breadcrumb(); ?></a></li>
                 </ol>
             </div>
         </section>
